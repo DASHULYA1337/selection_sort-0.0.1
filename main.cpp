@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool read_numbers(int & n, int * array)
+bool numbers(int & n, int * array)
 {
 	string string;
 	getline(cin, string);
@@ -27,7 +27,7 @@ int main() {
 	getline(cin, str);
 	istringstream stream(str);
 	if (stream >> n) {
-		if (read_numbers(n, array)) {
+		if (numbers(n, array)) {
 			int min_i;
 			for (int i = 0; i < n; i++) {
 				min = array[i];
