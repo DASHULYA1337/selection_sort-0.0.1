@@ -23,9 +23,9 @@ int main() {
 	int * array = new int;
 	int min;
 
-	string str;
-	getline(cin, str);
-	istringstream stream(str);
+	string s;
+	getline(cin, s);
+	istringstream stream(s);
 	if (stream >> n) {
 		if (numbers(n, array)) {
 			int min_i;
