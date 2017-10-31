@@ -19,14 +19,15 @@ bool numbers(int & n, int * array)
 }
 
 int main() {
-	int n = 5;
-	int * array = new int;
+	int n ;
+	
 	int min;
 
 	string s;
 	getline(cin, s);
 	istringstream stream(s);
 	if (stream >> n) {
+	  int * array = new int [n];
 		if (numbers(n, array)) {
 			int min_i;
 			for (int i = 0; i < n; i++) {
@@ -49,7 +50,5 @@ int main() {
 		}
 	}
 
-	cin.get();
-	cin.get();
 	return 0;
 }
